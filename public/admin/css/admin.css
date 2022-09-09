@@ -1,0 +1,68 @@
+.add-admin{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-dark-01);
+    max-width: 800px;
+    padding: 20px;
+}
+
+.add-admin h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.add-admin form{
+    background: var(--gray-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-admin form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.add-admin form label{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.add-admin form .form-group input{
+    height: 40px;
+    border: 1px solid var(--gray-dark-01);
+    background: var(--white);
+    color: var(--gray-dark);
+    font-weight: 500;
+    padding: 7px 12px;
+    width: 100%;
+    transition: all .35s;
+}
+
+.add-admin form .form-group input:focus{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.add-admin form .button{
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.add-admin form .button:hover{
+    background-color: var(--gray-dark);
+}

@@ -1,0 +1,107 @@
+.messages{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid var(--gray-dark-01);
+    padding: 20px;
+    gap: 40px;
+}
+
+.messages h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.messages .messages-wrapper{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages .messages-wrapper .message-wrapper{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    transition: all .35s;
+}
+
+.messages .messages-wrapper .message-wrapper:hover{
+    background-color: var(--gray-color);
+}
+
+.messages .messages-wrapper .message-wrapper .message-card{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 20px;
+    width: 100%;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card .icon{
+    padding: 10px 20px 10px 0;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card .icon i{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.messages .messages-wrapper .message-wrapper .message-card .user{
+    width: 250px;
+    min-width: 250px;
+    color: var(--gray-dark);
+}
+
+.messages .messages-wrapper .message-wrapper .message-card .user .name{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card.active .user .name{
+    font-weight: 700;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card .user .email{
+    font-size: 14px;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card.active .user .email{
+    font-weight: 600;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card .question{
+    color: var(--gray-dark);
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card.active .question .title{
+    font-weight: 700;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card.active .new-message-indicator{
+    padding: 0 10px 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.messages .messages-wrapper .message-wrapper .message-card.active .new-message-indicator i{
+    font-size: 10px;
+    color: var(--blue);
+}
+
+.messages .messages-wrapper .message-wrapper .message-card .date{
+    padding: 0 20px 0 0;
+    color: var(--gray-dark);
+}
+
+.messages .messages-wrapper .message-wrapper .message-card.active .date{
+    font-weight: 800;
+}
+
+.messages .messages-wrapper .message-wrapper .confirmDeleteMessage i{
+    color: var(--red);
+}

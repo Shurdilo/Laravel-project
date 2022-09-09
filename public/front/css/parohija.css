@@ -1,0 +1,112 @@
+.hero{
+    background-repeat: no-repeat!important;
+    background-size: cover!important;    
+    background-position: center!important;
+    width: 100vw;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero h2{
+    font-size: 36px;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.hero h1{
+    font-size: 60px;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.parohija{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.parohija .details{
+    display: flex;
+    gap: 60px;
+    height: 400px;
+}
+
+.parohija .details .image{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.parohija .details .image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.parohija .details .informations{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.parohija .details .informations .info{
+    display: flex;
+    gap: 15px;
+}
+
+.parohija .details .informations .info i{
+    font-size: 24px;
+    color: var(--gray-dark-05);
+    transition: all .35s;
+    margin-top: 5px;
+}
+
+.parohija .details .informations .info:hover i{
+    color: var(--primary-color);
+}
+
+.parohija .details .informations .info .info-card .info-text{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-dark);
+}
+
+.parohija .details .informations .info .info-card a.info-text{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.parohija .details .informations .info .info-card .info-subtext{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-dark-05);
+}
+
+.parohija .about h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gray-dark);
+    line-height: 1.67;
+    margin-bottom: 5px;
+}
+
+.parohija .about p{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--gray);
+    line-height: 1.67;
+}
+
+
+

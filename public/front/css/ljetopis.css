@@ -1,0 +1,74 @@
+.hero{
+    background-repeat: no-repeat!important;
+    background-size: cover!important;    
+    background-position: center!important;
+    width: 100vw;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero h2{
+    font-size: 36px;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.hero h1{
+    font-size: 60px;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ljetopis{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.ljetopis .section-title{
+    font-size: 36px;
+    width: 900px;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.ljetopis .ljetopis-wrapper p img{
+    border-radius: 15px;
+    padding: 0;
+    float: left;
+    margin: 5px 30px 0 0;
+}
+
+.ljetopis .ljetopis-wrapper .image-style-side img{
+    border-radius: 15px;
+    padding: 0;
+    float: right!important;
+    margin-left: 30px;
+}
+
+.ljetopis .ljetopis-wrapper .image:not(.image-style-side){
+    display: flex;
+    justify-content: center;
+}
+
+.ljetopis .ljetopis-wrapper .image:not(.image-style-side) img{
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.ljetopis .ljetopis-wrapper p{
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--gray);
+    line-height: 1.67;
+}

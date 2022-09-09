@@ -1,0 +1,91 @@
+.admins{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid var(--gray-dark-01);
+    padding: 20px;
+    gap: 40px;
+}
+
+.admins .headTab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admins .headTab h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.admins .headTab #add{
+    position: relative;
+    width: fit-content;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.admins .headTab #add:hover{
+    background-color: var(--gray-dark);
+}
+
+.admins .admins-wrapper{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admins .admins-wrapper .admin-wrapper{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    transition: all .35s;
+}
+
+.admins .admins-wrapper .admin-wrapper:hover{
+    background-color: var(--gray-color);
+}
+
+.admins .admins-wrapper .admin-wrapper .admin-card{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 20px;
+    width: 100%;
+    color: var(--gray-dark);
+}
+
+.admins .admins-wrapper .admin-wrapper .admin-card .icon{
+    padding: 10px 20px 10px 0;
+}
+
+.admins .admins-wrapper .admin-wrapper .admin-card .icon i{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.admins .admins-wrapper .admin-wrapper .admin-card .user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.admins .admins-wrapper .admin-wrapper .admin-card .user .name{
+    min-width: 300px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.admins .admins-wrapper .admin-wrapper .confirmDeleteAdmin i{
+    color: var(--red);
+}

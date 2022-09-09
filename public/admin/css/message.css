@@ -1,0 +1,109 @@
+.message{
+    display: flex;
+    flex-direction: row;
+}
+
+.message .message-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px 0 0;
+}
+
+.message .message-icons .user i{
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+.message .message-icons .back .circle{
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .35s;
+}
+
+.message .message-icons .back .circle i{
+    color: var(--white);
+}
+
+.message .message-icons .back:hover .circle{
+    transform: translateX(-3px);
+}
+
+.message .message-icons .back:hover .circle i{
+    animation: beam .35s;
+}
+
+@keyframes beam {
+    0%   {
+        transform: translate(0,0)
+    }
+    49%  {
+        transform: translate(-35px,0);
+    }
+    50%  {
+        transform: translate(-35px,-35px);
+    }
+    51%  {
+        transform: translate(35px,-35px);
+    }
+    52%  {
+        transform: translate(25px,0);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.message .message-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: var(--white);
+    border: 1px solid var(--gray-dark-01);
+    padding: 20px;
+    width: 100%;
+}
+
+.message .message-wrapper span.span-text{
+    display: inline-block;
+    width: 70px;
+}
+
+.message .message-wrapper .name-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message .message-wrapper .name-group .name{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gray-dark);
+    margin-bottom: 20px;
+}
+
+.message .message-wrapper .name-group .date{
+    display: flex;
+    gap: 5px;
+}
+
+.message .message-wrapper .email{
+    font-weight: 600;
+}
+
+.message .message-wrapper .text{
+    display: flex;
+    margin-top: 30px;
+}
+
+.message .message-wrapper .text span.span-text{
+    min-width: 75px;
+}

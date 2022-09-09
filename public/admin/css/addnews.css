@@ -1,0 +1,159 @@
+.add-news{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-dark-01);
+    max-width: 800px;
+    padding: 20px;
+}
+
+.add-news h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.add-news form{
+    background: var(--gray-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-news form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.add-news form .ck-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-news form label{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.add-news form .form-group input{
+    height: 40px;
+    border: 1px solid var(--gray-dark-01);
+    background: var(--white);
+    color: var(--gray-dark);
+    font-weight: 500;
+    padding: 7px 12px;
+    width: 100%;
+    transition: all .35s;
+}
+
+.add-news form .form-group input:focus{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.add-news form .form-group #custom-button{
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.add-news form .form-group #custom-button:hover{
+    background-color: var(--gray-dark);
+}
+
+.add-news form .form-group #custom-text{
+    color: var(--primary-color);
+}
+
+.add-news form .image-preview{
+    max-width: 100%;
+    width: 100%;
+    min-height: 116px;
+    max-height: auto;
+    border: 1px solid var(--gray-dark-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--white);
+    overflow: auto;
+}
+
+.add-news form .image-preview .image-preview-image{
+    display: none;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.add-news form .button{
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.add-news form .button:hover{
+    background-color: var(--gray-dark);
+}
+
+.ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all{
+    color: var(--primary-color)!important;
+}
+
+.ck.ck-editor{
+    background: var(--white)!important;
+}
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners,
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+    border: 1px solid var(--gray-dark-01)!important;
+}
+
+.add-news .validationerror{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--red-01);
+    border: 1px solid var(--red-05);
+    padding: 5px 0;
+}
+
+.add-news .validationerror .fa-times{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.add-news .validationerror ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.add-news .validationerror ul li{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--red);
+}

@@ -1,0 +1,63 @@
+.ljetopis{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-dark-01);
+    padding: 20px;
+}
+
+.ljetopis h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.ljetopis form{
+    background: var(--gray-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ljetopis form .ck-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ljetopis form label{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.ljetopis form .button{
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.ljetopis form .button:hover{
+    background-color: var(--gray-dark);
+}
+
+.ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all{
+    color: var(--primary-color)!important;
+}
+
+.ck.ck-editor{
+    background: var(--white)!important;
+}
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners,
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+    border: 1px solid var(--gray-dark-01)!important;
+}

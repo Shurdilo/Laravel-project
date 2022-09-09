@@ -1,0 +1,351 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-dark-01);
+    max-width: 502px;
+    padding: 20px;
+}
+
+.hero-images h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.hero-images .add-hero-image form{
+    background: var(--gray-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-images .add-hero-image form .form-group{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.hero-images .add-hero-image form .form-group #custom-button{
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.hero-images .add-hero-image form .form-group #custom-button:hover{
+    background-color: var(--gray-dark);
+}
+
+.hero-images .add-hero-image form .form-group #custom-text{
+    color: var(--primary-color);
+}
+
+.hero-images .add-hero-image form .submit{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.hero-images .add-hero-image form .submit:hover{
+    background-color: var(--gray-dark);
+}
+
+.hero-images .show-hero-images{
+    background-color: var(--gray-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-height: 480px;
+    overflow: auto;
+}
+
+.hero-images .show-hero-images::-webkit-scrollbar{
+    display: none;
+}
+
+.hero-images .show-hero-images .hero-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-images .show-hero-images .hero-image .confirmDeleteHero{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    padding: 5px;
+    background-color: var(--white);
+}
+
+.hero-images .show-hero-images .hero-image .confirmDeleteHero i{
+    color: var(--red);
+}
+
+.hero-images .show-hero-images .hero-image .selectHero{
+    overflow: hidden;
+    display: flex;
+    z-index: 98;
+}
+
+.hero-images .show-hero-images .hero-image.active .selectHero{
+    border: 2px solid var(--green);
+}
+
+.hero-images .show-hero-images .hero-image.active .selectHero img{
+    width: calc(380px/3 - 4px);
+    height: calc(380px/3 - 4px);
+}
+
+.hero-images .show-hero-images .hero-image .selectHero img{
+    object-fit: cover;
+    width: calc(380px/3);
+    height: calc(380px/3);
+    transition: all .35s;
+}
+
+.hero-images .show-hero-images .hero-image .selectHero:hover img{
+    transform: scale(1.05);
+}
+
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,.9);
+}
+  
+.modal .close-outside{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+  
+/* Modal Content (image) */
+.modal .modal-content{
+    display: block;
+    max-width: 80%;
+    z-index: 99;
+    max-height: 80vh;
+}
+  
+/* Caption of Modal Image */
+.modal #caption{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+  
+/* Add Animation */
+.modal .modal-content, #caption{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: .6s;
+    animation-name: zoom;
+    animation-duration: .6s;
+}
+
+.mitropolit .validationerror{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--red-01);
+    border: 1px solid var(--red-05);
+    padding: 5px 0;
+}
+
+.mitropolit .validationerror .fa-times{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.mitropolit .validationerror ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mitropolit .validationerror ul li{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--red);
+}
+
+.mitropolit{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-dark-01);
+    padding: 20px;
+    max-width: 800px;
+}
+
+.mitropolit h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.mitropolit form{
+    background: var(--gray-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mitropolit form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.mitropolit form .ck-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mitropolit form label{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.mitropolit form .form-group input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--gray-dark-01);
+    background: var(--white);
+    color: var(--gray-dark);
+    font-weight: 500;
+    padding: 7px 12px;
+    transition: all .35s;
+}
+
+.mitropolit form .form-group input:focus{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.mitropolit form .form-group #custom-button1{
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.mitropolit form .form-group #custom-button1:hover{
+    background-color: var(--gray-dark);
+}
+
+.mitropolit form .form-group #custom-text1{
+    color: var(--primary-color);
+}
+
+.mitropolit form .form-group.mitroimage{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mitropolit form .form-group.mitroimage i{
+    color: var(--red);
+}
+
+.mitropolit form .image-preview{
+    max-width: 100%;
+    width: 100%;
+    min-height: 116px;
+    max-height: auto;
+    border: 1px solid var(--gray-dark-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--white);
+    overflow: auto;
+}
+
+.mitropolit form .image-preview .image-preview-image{
+    display: none;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.mitropolit form .button{
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.mitropolit form .button:hover{
+    background-color: var(--gray-dark);
+}
+
+.ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all{
+    color: var(--primary-color)!important;
+}
+
+.ck.ck-editor{
+    background: var(--white)!important;
+}
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners,
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+    border: 1px solid var(--gray-dark-01)!important;
+}

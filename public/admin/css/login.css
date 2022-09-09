@@ -1,0 +1,118 @@
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.login{
+    flex: 0 0 33.33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.login img{
+    width: 90px;
+    height: auto;
+}
+
+.login h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.login .validationerror{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--red-01);
+    border: 1px solid var(--red-05);
+    padding: 5px 0;
+}
+
+.login .validationerror .fa-times{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.login .validationerror ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login .validationerror ul li{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--red);
+}
+
+.login form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login form .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.login form .form-group label{
+    color: var(--primary-color);
+}
+
+.login form .form-group input{
+    height: 40px;
+    border: 1px solid var(--gray-dark-01);
+    background: var(--gray-color);
+    color: var(--gray-dark);
+    font-weight: 500;
+    padding: 7px 12px;
+    transition: all .35s;
+}
+
+.login form .form-group input:focus{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.login form .submit{
+    width: 100%;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.login form .submit:hover{
+    background-color: var(--gray-dark);
+}
+
+.wallpaper img{
+    height: 100vh;
+    object-fit: cover;
+}
